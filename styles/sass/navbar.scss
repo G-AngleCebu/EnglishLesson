@@ -1,0 +1,18 @@
+nav{
+  height: 100%;
+  background-color: $dark-color;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-elem{
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

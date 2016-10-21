@@ -1,0 +1,50 @@
+.progress-bar{
+  padding: 10px;
+  height: 100px;
+  width: 1000px;
+  background-color: darken($dark-color, 5%);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  & > .bar{
+    height: 100%;
+    width: 10%;
+    background-color: yellowgreen;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+
+    -webkit-transition: width .6s ease-in;
+            transition: width .6s ease-in;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, .2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%,
+        transparent 75%,
+        transparent
+      );
+      z-index: 1;
+      background-size: 100px 100px;
+      animation: move 2s linear infinite;
+      overflow: hidden;
+    }
+  }
+}
+
+@keyframes move {
+  from{ background-position: 0 0; }
+  to{ background-position: 100px 100px; }
+}

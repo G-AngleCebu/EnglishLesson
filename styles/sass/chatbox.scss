@@ -1,0 +1,68 @@
+#chatbox{
+  overflow-y: scroll;
+}
+
+.chat-container{
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+
+  -webkit-transition: opacity .6s ease-in;
+          transition: opacity .6s ease-in;
+
+  &:not(:last-child){
+    opacity: .3;
+  }
+
+  & > label{
+    color: Lightgray;
+    font-family: $light-font;
+    text-transform: uppercase;
+  }
+
+  & > p{
+    color: white;
+    font-size: 80px;
+    font-family: $bold-font;
+    font-weight: 900;
+  }
+
+  &.pepper{
+    animation-name: PopLeft;
+    padding-right: 30%;
+  }
+
+  &.user{
+    animation-name: PopRight;
+    padding-left: 30%;
+    align-items: flex-end;
+
+    & > p{
+      text-align: right;
+    }
+  }
+}
+
+@keyframes PopLeft {
+    from {
+      transform: translateX(-150px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+}
+
+
+@keyframes PopRight {
+    from {
+      transform: translateX(150px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+}

@@ -1,0 +1,48 @@
+#result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#percent-label{
+  margin: 20px;
+  color: yellowgreen;
+  font-size: 100px;
+}
+
+.percent-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit-name{
+  margin: 0;
+  color: yellowgreen;
+  font-family: $bold-font;
+}
+
+.button-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  & > button{
+    height: 200px;
+    width: 400px;
+    color: $theme-color;
+    background-color: yellowgreen;
+    font-size: 50px;
+    font-family: $bold-font;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    &.negative{
+      color: yellowgreen;
+      background-color: $theme-color;
+      border: solid 6px yellowgreen;
+    }
+  }
+}

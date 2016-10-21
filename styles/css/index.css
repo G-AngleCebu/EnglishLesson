@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+nav {
+  height: 100%;
+  background-color: #2D2E33;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+.nav-elem {
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.page-1 {
+  width: 100%;
+  height: 100%;
+  background-color: black; }
+
+#chatbox {
+  overflow-y: scroll; }
+
+.chat-container {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  -webkit-transition: opacity .6s ease-in;
+  transition: opacity .6s ease-in; }
+  .chat-container:not(:last-child) {
+    opacity: .3; }
+  .chat-container > label {
+    color: Lightgray;
+    font-family: "OpenSans-Light";
+    text-transform: uppercase; }
+  .chat-container > p {
+    color: white;
+    font-size: 80px;
+    font-family: "OpenSans-Bold";
+    font-weight: 900; }
+  .chat-container.pepper {
+    animation-name: PopLeft;
+    padding-right: 30%; }
+  .chat-container.user {
+    animation-name: PopRight;
+    padding-left: 30%;
+    align-items: flex-end; }
+    .chat-container.user > p {
+      text-align: right; }
+
+@keyframes PopLeft {
+  from {
+    transform: translateX(-150px); }
+  to {
+    transform: translateX(0px); } }
+@keyframes PopRight {
+  from {
+    transform: translateX(150px); }
+  to {
+    transform: translateX(0px); } }
+.progress-bar {
+  padding: 10px;
+  height: 100px;
+  width: 1000px;
+  background-color: #212225;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .progress-bar > .bar {
+    height: 100%;
+    width: 10%;
+    background-color: yellowgreen;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width .6s ease-in;
+    transition: width .6s ease-in; }
+    .progress-bar > .bar:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+      z-index: 1;
+      background-size: 100px 100px;
+      animation: move 2s linear infinite;
+      overflow: hidden; }
+
+@keyframes move {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100px 100px; } }
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+#percent-label {
+  margin: 20px;
+  color: yellowgreen;
+  font-size: 100px; }
+
+.percent-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.unit-name {
+  margin: 0;
+  color: yellowgreen;
+  font-family: "OpenSans-Bold"; }
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .button-wrapper > button {
+    height: 200px;
+    width: 400px;
+    color: #32373C;
+    background-color: yellowgreen;
+    font-size: 50px;
+    font-family: "OpenSans-Bold";
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box; }
+    .button-wrapper > button.negative {
+      color: yellowgreen;
+      background-color: #32373C;
+      border: solid 6px yellowgreen; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1707px;
+  height: 1067px;
+  font-family: "OpenSans";
+  position: relative;
+  background-color: Silver; }
+
+#page-container {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.page {
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  background-color: #32373C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: transform .6s ease-in;
+  transition: transform .6s ease-in; }
+  .page.show {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+
+/*# sourceMappingURL=index.css.map */

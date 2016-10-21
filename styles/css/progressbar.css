@@ -5,7 +5,7 @@ Error: Undefined variable: "$dark-color".
 1: .progress-bar{
 2:   padding: 10px;
 3:   height: 100px;
-4:   width: 1000px;
+4:   width: 1280px;
 5:   background-color: darken($dark-color, 5%);
 6:   border-radius: 10px;
 7:   position: relative;
@@ -74,4 +74,4 @@ sass/progressbar.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-color\".\A         on line 5 of sass/progressbar.scss\A \A 1: .progress-bar{\A 2:   padding: 10px;\A 3:   height: 100px;\A 4:   width: 1000px;\A 5:   background-color: darken($dark-color, 5%);\A 6:   border-radius: 10px;\A 7:   position: relative;\A 8:   overflow: hidden;\A 9:   box-sizing: border-box;\A 10: "; }
+  content: "Error: Undefined variable: \"$dark-color\".\A         on line 5 of sass/progressbar.scss\A \A 1: .progress-bar{\A 2:   padding: 10px;\A 3:   height: 100px;\A 4:   width: 1280px;\A 5:   background-color: darken($dark-color, 5%);\A 6:   border-radius: 10px;\A 7:   position: relative;\A 8:   overflow: hidden;\A 9:   box-sizing: border-box;\A 10: "; }

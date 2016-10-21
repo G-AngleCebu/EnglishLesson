@@ -46,10 +46,10 @@ nav {
     opacity: .3; }
   .chat-container > label {
     color: Lightgray;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans";
     text-transform: uppercase; }
   .chat-container > p {
-    color: white;
+    color: White;
     font-size: 80px;
     font-family: "OpenSans-Bold";
     font-weight: 900; }
@@ -60,6 +60,8 @@ nav {
     animation-name: PopRight;
     padding-left: 30%;
     align-items: flex-end; }
+    .chat-container.user > label {
+      color: Yellowgreen; }
     .chat-container.user > p {
       text-align: right; }
 
@@ -76,7 +78,7 @@ nav {
 .progress-bar {
   padding: 10px;
   height: 100px;
-  width: 1000px;
+  width: 1280px;
   background-color: #212225;
   border-radius: 10px;
   position: relative;
@@ -84,7 +86,7 @@ nav {
   box-sizing: border-box; }
   .progress-bar > .bar {
     height: 100%;
-    width: 10%;
+    width: 100%;
     background-color: yellowgreen;
     border-radius: inherit;
     position: relative;
@@ -128,7 +130,8 @@ nav {
 .unit-name {
   margin: 0;
   color: yellowgreen;
-  font-family: "OpenSans-Bold"; }
+  font-family: "OpenSans-Bold";
+  position: relative; }
 
 .button-wrapper {
   width: 100%;
@@ -137,13 +140,22 @@ nav {
   .button-wrapper > button {
     height: 200px;
     width: 400px;
-    color: #32373C;
+    color: #4d6719;
     background-color: yellowgreen;
     font-size: 50px;
     font-family: "OpenSans-Bold";
-    border: none;
+    border: solid 6px #212225;
     border-radius: 20px;
     box-sizing: border-box; }
+    .button-wrapper > button:not(.negative) {
+      background: #99cd32;
+      background: -moz-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #99cd32), color-stop(51%, #81b01a), color-stop(100%, #638513));
+      background: -webkit-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -o-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -ms-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: linear-gradient(to bottom, #99cd32 0%, #81b01a 51%, #638513 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 ); }
     .button-wrapper > button.negative {
       color: yellowgreen;
       background-color: #32373C;

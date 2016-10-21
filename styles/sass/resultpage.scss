@@ -21,6 +21,7 @@
   margin: 0;
   color: yellowgreen;
   font-family: $bold-font;
+  position: relative;
 }
 
 .button-wrapper{
@@ -31,13 +32,24 @@
   & > button{
     height: 200px;
     width: 400px;
-    color: $theme-color;
+    color: darken(yellowgreen, 25%);
     background-color: yellowgreen;
     font-size: 50px;
     font-family: $bold-font;
-    border: none;
+    border: solid 6px darken($dark-color, 5%);
     border-radius: 20px;
     box-sizing: border-box;
+
+    &:not(.negative){
+      background: rgba(153,205,50,1);
+      background: -moz-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,205,50,1)), color-stop(51%, rgba(129,176,26,1)), color-stop(100%, rgba(99,133,19,1)));
+      background: -webkit-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -o-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -ms-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: linear-gradient(to bottom, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 );
+    }
 
     &.negative{
       color: yellowgreen;

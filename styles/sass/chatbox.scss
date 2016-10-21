@@ -21,12 +21,12 @@
 
   & > label{
     color: Lightgray;
-    font-family: $light-font;
+    font-family: $default-font;
     text-transform: uppercase;
   }
 
   & > p{
-    color: white;
+    color: White;
     font-size: 80px;
     font-family: $bold-font;
     font-weight: 900;
@@ -41,6 +41,10 @@
     animation-name: PopRight;
     padding-left: 30%;
     align-items: flex-end;
+
+    & > label{
+      color: Yellowgreen;
+    }
 
     & > p{
       text-align: right;

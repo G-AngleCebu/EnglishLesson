@@ -8,11 +8,11 @@ Error: Undefined variable: "$bold-font".
 21:   margin: 0;
 22:   color: yellowgreen;
 23:   font-family: $bold-font;
-24: }
-25: 
-26: .button-wrapper{
-27:   width: 100%;
-28:   display: flex;
+24:   position: relative;
+25: }
+26: 
+27: .button-wrapper{
+28:   width: 100%;
 
 Backtrace:
 sass/resultpage.scss:23
@@ -67,4 +67,4 @@ sass/resultpage.scss:23
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bold-font\".\A         on line 23 of sass/resultpage.scss\A \A 18: }\A 19: \A 20: .unit-name{\A 21:   margin: 0;\A 22:   color: yellowgreen;\A 23:   font-family: $bold-font;\A 24: }\A 25: \A 26: .button-wrapper{\A 27:   width: 100%;\A 28:   display: flex;"; }
+  content: "Error: Undefined variable: \"$bold-font\".\A         on line 23 of sass/resultpage.scss\A \A 18: }\A 19: \A 20: .unit-name{\A 21:   margin: 0;\A 22:   color: yellowgreen;\A 23:   font-family: $bold-font;\A 24:   position: relative;\A 25: }\A 26: \A 27: .button-wrapper{\A 28:   width: 100%;"; }

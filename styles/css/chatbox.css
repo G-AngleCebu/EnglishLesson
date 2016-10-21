@@ -1,5 +1,5 @@
 /*
-Error: Undefined variable: "$light-font".
+Error: Undefined variable: "$default-font".
         on line 24 of sass/chatbox.scss
 
 19:     opacity: .3;
@@ -7,12 +7,12 @@ Error: Undefined variable: "$light-font".
 21: 
 22:   & > label{
 23:     color: Lightgray;
-24:     font-family: $light-font;
+24:     font-family: $default-font;
 25:     text-transform: uppercase;
 26:   }
 27: 
 28:   & > p{
-29:     color: white;
+29:     color: White;
 
 Backtrace:
 sass/chatbox.scss:24
@@ -78,4 +78,4 @@ sass/chatbox.scss:24
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-font\".\A         on line 24 of sass/chatbox.scss\A \A 19:     opacity: .3;\A 20:   }\A 21: \A 22:   & > label{\A 23:     color: Lightgray;\A 24:     font-family: $light-font;\A 25:     text-transform: uppercase;\A 26:   }\A 27: \A 28:   & > p{\A 29:     color: white;"; }
+  content: "Error: Undefined variable: \"$default-font\".\A         on line 24 of sass/chatbox.scss\A \A 19:     opacity: .3;\A 20:   }\A 21: \A 22:   & > label{\A 23:     color: Lightgray;\A 24:     font-family: $default-font;\A 25:     text-transform: uppercase;\A 26:   }\A 27: \A 28:   & > p{\A 29:     color: White;"; }

@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+  setResult('Unit Title', 80);
 });
 
 // Either pass 'pepper' or 'user' as sender and string as msg

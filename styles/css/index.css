@@ -86,7 +86,7 @@ nav {
   box-sizing: border-box; }
   .progress-bar > .bar {
     height: 100%;
-    width: 100%;
+    width: 0px;
     background-color: yellowgreen;
     border-radius: inherit;
     position: relative;
@@ -121,6 +121,8 @@ nav {
   margin: 20px;
   color: yellowgreen;
   font-size: 100px; }
+  #percent-label:after {
+    content: "%"; }
 
 .percent-wrapper {
   display: flex;

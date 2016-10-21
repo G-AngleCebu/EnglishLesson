@@ -9,6 +9,10 @@
   margin: 20px;
   color: yellowgreen;
   font-size: 100px;
+
+  &:after{
+    content: "%";
+  }
 }
 
 .percent-wrapper{
